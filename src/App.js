@@ -20,13 +20,9 @@ function App() {
     const tl = gsap.timeline({ defaults: { ease: 'power3.inOut' } });
 
     tl.fromTo(sky, { x: '+=350' }, { duration: 0.5, x: '-=350', autoAlpha: 1 })
-      .fromTo(ground, { y: '+100', scale: 0 }, {
-        duration: 0.5, y: '0', scale: 1, autoAlpha: 1,
-      })
+      .fromTo(ground, { y: '+100', scale: 0 }, { duration: 0.5, y: '0', scale: 1, autoAlpha: 1 })
       .fromTo(stones, { scale: 0 }, { duration: 1, scale: 1, autoAlpha: 1 })
-      .fromTo(flowers, { y: '+=50' }, {
-        y: '-=50', duration: 1, scale: 1, autoAlpha: 1,
-      })
+      .fromTo(flowers, { y: '+=50' }, { y: '-=50', duration: 1, scale: 1, autoAlpha: 1 })
       .fromTo(reactLogo, { scale: 0 }, { duration: 0.5, scale: 1, autoAlpha: 1 })
       .fromTo(girl, { y: '-=150' }, { duration: 1, y: '+=150', autoAlpha: 1 });
   });

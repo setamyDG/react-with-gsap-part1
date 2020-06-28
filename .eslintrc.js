@@ -8,9 +8,7 @@ module.exports = {
     'airbnb',
   ],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
+    ecmaFeatures: { jsx: true },
     ecmaVersion: 11,
     sourceType: 'module',
   },
@@ -20,5 +18,6 @@ module.exports = {
   rules: {
     indent: [2],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'object-curly-newline': ['error', { multiline: true }],
   },
 };
